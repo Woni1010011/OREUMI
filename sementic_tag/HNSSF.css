@@ -1,0 +1,101 @@
+body{
+    padding: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gab16{
+    padding: 16px;
+}
+
+.topHeader{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+h1{
+    color: white;
+}
+
+.navbar{
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+}
+
+nav{
+    color: white;
+    font-weight: bold;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    margin-bottom: 16px;
+}
+
+.left-side{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    margin-right: 2%;
+}
+
+aside{
+    color: white;
+    font-weight: bold;
+}
+
+.center-section{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+section{
+    color: white;
+    font-weight: bold;
+}
+
+.bottom-footer{
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+
+footer{
+    color: white;
+    font-weight: bold;
+}
