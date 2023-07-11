@@ -3,7 +3,7 @@
 # 예시
 # 0, 1, 1, 2, 3, 5, 8, 13, 21, ....
 
-# 원하는 자릿수 입력
+# # 원하는 자릿수 입력
 n = int(input())
 
 # 더해 나갈 첫번째와 두번째 요소 설정
@@ -14,3 +14,14 @@ for i in range(2,n) :
     fibonacci.append(fibonacci[i-1] + fibonacci[i-2])
 
 print(fibonacci)
+
+# 재귀함수
+
+def fibo(a) :
+    if a <= 1 :
+        return a
+    else:
+        return fibo(a-1) + fibo(a-2)
+
+print(fibo(n))
+
