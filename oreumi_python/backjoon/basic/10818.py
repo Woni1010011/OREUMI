@@ -4,8 +4,9 @@ n = int(input())
 
 li = list(map(int, input().split()))
 
-ans = []
-ans.append(min(li))
-ans.append(max(li))
+# ans = []
+# ans.append(min(li), max(li))
+a = min(li)
+b = max(li)
 
-print(*ans)
+print(a,b)
