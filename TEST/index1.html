@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form id="signupForm">
+        <div>
+            <label for="name">이름:</label>
+        <input type="text" id="name" required>
+
+        </div>
+        <div>
+            <label for="email">이메일:</label>
+            <input type="email" id="email" required>
+
+        </div>
+        <div>
+            <button type="submit">가입하기</button>
+        </div>
+
+    </form>
+
+    <script>
+        function handleSignup(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            alert(`회원가입이 완료되었습니다!\n이름: ${name}\n이메일: ${email}`);
+            document.getElementById('signupForm').reset();
+        }
+
+        document.getElementById('signupForm').addEventListener('submit', handleSignup);
+    </script>
+</body>
+<script>
+    let clickCount = 0;
+    const fadeButton = document.getElementById('fadeButton');
+
+    fadeButton.addEventListener('click', function(){
+        clickCount++;
+        if(clickCount < 5){
+
+        }else {
+
+        }
+    });
+</script>
+</html>
