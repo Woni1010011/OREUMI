@@ -18,4 +18,4 @@ for i in li :
 
 print(*ans.values())
 
-# dict의 시간복잡도는 O(1)인데 dict를 셋팅하기 위해 for문이 돌아간다면 시간복잡도는 O(n)이 되는게 맞지 않나요??
+# dict의 시간복잡도는 O(1)인데 dict를 셋팅하기 위해 for문이 돌아간다면 시간복잡도는 O(n)이 되는게 맞지 않나요?? O(n) 이 맞음
