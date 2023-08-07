@@ -6,29 +6,36 @@ T = int(input())
 
 for _ in range(T) :
     w, n = map(int, input().split())
-    b = [[0,0]]
-    count = 1
-    for _ in range(n) :
-        x, y = map(int, input().split())
-        b.append([x, y])
-    
-    i = 0
-    capacity = 0
+    x = [0] * n
+    w = [0] * n
+    distance = 0
+    w_load = w
 
-    while i < n:
-        capacity += b[i][1]
-        # 쓰레기가 채워지지 않은 경우
-        if capacity < w :
-            count += 1
-            i+=1
-            capacity += b[i][1]
-        elif capacity == w :
-            pass
+    for i in range(n) :
+        x[i], w[i] = map(int, input().split())
 
-        # 쓰레기가 다 채워진 경우
-        # 쓰레기가 초과되서 채워지려는 경우
+        i = 0
+
+        while i < n :
+
+            # 용량이 같을때
+            if w_load == w[i]:
+                distance += 2 * x[i]
+                i += 1
+                w_load = w
+            #용량이 여유가 있을때
+            elif w_load > w[i] :
+                w_load -= w[i]
+                i += 1
+
+            # 용량이 넘칠때
+            else :
+                distance += 2 * x[i]
+                w_load = w
         
-    print(count)
-
+        # 용량이 여유가 있는 상태로 맨 마지막 지점에 도착하게 된다면
+        if w_load < w :
+            distance += 2 * x[i]
+        print(distance)
 
 
